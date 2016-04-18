@@ -1,7 +1,10 @@
 class SearchController < ApplicationController
 
   def index
-    @results = Faraday.new(http://www.nrel.gov/api/alt-fuel-stations/v1/nearest.format?parameters)
+    connection = Faraday.new(:url => "http://www.nrel.gov/api/alt-fuel-stations/v1/nearest.json?&api_key=#{ENV["NREL_KEY"]}&zip?#{params[:zipcode]}")
+    binding.pry
+    @results = JSON.parse(connection.get.body)
+# binding.pry
   end
 
 end
