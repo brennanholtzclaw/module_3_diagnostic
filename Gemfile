@@ -16,6 +16,7 @@ gem 'figaro'
 gem 'pg'
 gem 'active_model_serializers', github: "rails-api/active_model_serializers"
 gem 'faraday'
+gem 'vcr'
 
 group :development, :test do
   gem 'responders'
