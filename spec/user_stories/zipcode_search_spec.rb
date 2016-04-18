@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'user sees search results by zipcode' do
+RSpec.feature 'user sees search results by zipcode' do
   it 'shows results limited to Electric and Propane' do
     # As a user
     # When I visit "/"
