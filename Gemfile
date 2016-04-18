@@ -15,6 +15,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'pg'
 gem 'active_model_serializers', github: "rails-api/active_model_serializers"
+gem 'faraday'
 
 group :development, :test do
   gem 'responders'
